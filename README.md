@@ -7,8 +7,10 @@ The project focuses on extracting structured data from a publicly available webs
 
 ## Objectives
 - Demonstrate static web scraping using BeautifulSoup.
-- Implement pagination handling.
+- Implement pagination handling across multiple pages.
 - Demonstrate scalable scraping using Scrapy.
+- Demonstrate JavaScript-rendered scraping using Playwright.
+- Explore CAPTCHA-aware scraping workflows.
 - Store scraped data in structured CSV files.
 
 ---
@@ -23,6 +25,7 @@ This website is intended for scraping practice and does not require authenticati
 - BeautifulSoup
 - Requests
 - Scrapy
+- Playwright
 - Pandas
 - Jupyter Notebook
 
@@ -55,7 +58,12 @@ Web-scraping-using-BeautifulSoup-and-Scrapy/
 ├── Captcha solver scraper/
 │   ├── Web scraping using Captcha solver.ipynb
 │   └── README.md
-│
+├── Web scraping using Playwright/
+│   ├── playwright_scraper.py
+│   ├── requirements.txt
+│   ├── data/
+│   │   └── quotes_playwright.csv
+│   └── README.md
 ├── README.md
 └── .gitignore
 ```
@@ -110,9 +118,24 @@ This module demonstrates:
 📄 Detailed documentation for this module is available in the  
 **README inside the `Captcha solver scraper` folder**.
 
+## Playwright Scraping
+- Used for scraping JavaScript-rendered web pages.
+- Executes a real browser to allow JavaScript to run.
+- Extracts data from the rendered DOM.
+- Handles pagination through browser interactions.
+- Suitable for dynamic websites where static scraping fails.
+
+## Tool Selection Summary
+- **BeautifulSoup** is used for static and exploratory scraping.
+- **Scrapy** is used for scalable and structured crawling pipelines.
+- **Playwright** is used for JavaScript-rendered and interactive websites.
+- **CAPTCHA-aware logic** demonstrates handling protected scraping scenarios.
+
+Tool selection is based on how the website delivers content, not just the data being extracted.
+
 ## Legal & Ethical Disclaimer
+This repository contains web scraping examples using BeautifulSoup, Scrapy, and Playwright for educational and demonstration purposes only.
 
-This repository contains web scraping examples using BeautifulSoup and Scrapy for educational and demonstration purposes only.
-
-All examples operate on publicly accessible demo data and do not involve scraping private, sensitive, or authenticated content.
+All examples operate on publicly accessible demo data and do not involve scraping private, sensitive, or authenticated content.  
+This project does not encourage or support bypassing website security mechanisms or violating terms of service.
 
