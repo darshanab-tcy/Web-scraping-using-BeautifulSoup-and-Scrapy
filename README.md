@@ -101,3 +101,10 @@ This module demonstrates:
 
 📄 Detailed documentation for this module is available in the  
 **README inside the `Captcha solver scraper` folder**.
+
+## Legal & Ethical Disclaimer
+
+This repository contains web scraping examples using BeautifulSoup and Scrapy for educational and demonstration purposes only.
+
+All examples operate on publicly accessible demo data and do not involve scraping private, sensitive, or authenticated content.
+
